@@ -61,4 +61,4 @@ Contributions are welcome. Please feel free to submit issues or pull requests.
 
 ## License
 
-This tool is licensed under the MIT License. See the LICENSE file for details.
+This tool is Unlicensed.

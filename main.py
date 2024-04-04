@@ -4,6 +4,14 @@ import requests
 import ollama
 from pypandoc import convert_text
 
+#Edit your details here! 
+# Subject number details: for Sem-2
+# 1 Entrepreneurship
+# 2 HRManagement
+# 3 FinanceManagement
+# 4 BusinessStats
+# 5 Ethics
+# 6 Legal
 subject_number = 1
 your_name="Charan"
 your_regno="100"

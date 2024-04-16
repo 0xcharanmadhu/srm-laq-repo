@@ -43,7 +43,7 @@ for subject_index, subject_name in enumerate(df.columns):
             question_prompt = str(question_prompt)
         
         response = ollama.generate(
-            model="llama2", # make sure models are installed and ollama is serving!
+            model="wizardlm2", # make sure models are installed and ollama is serving!
             prompt= f"{question_prompt+input_size}"
         )
 

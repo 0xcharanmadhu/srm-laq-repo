@@ -3,3 +3,4 @@ requests
 pypandoc
 openpyxl
 ollama
+htmldocx

@@ -26,8 +26,7 @@ def md2html(md):
     # Convert Markdown to HTML using Python-Markdown
     return markdown.markdown(md)
 
-document = Document()
-new_parser = HtmlToDocx()
+
 
 file_url = f"https://raw.githubusercontent.com/0xcharanmadhu/srm-laq-repo/main/{subject_number}.xlsx"
 
@@ -51,6 +50,8 @@ for subject_index, subject_name in enumerate(df.columns):
         response_text = response['response']
 
         if response_text:
+            document = Document()
+            new_parser = HtmlToDocx()
             markdown_text = f"# {question_prompt}\n \n\nName:**{your_name}**\n \nRegister No:**{your_regno}**\n \n{response_text}"
             html_content = md2html(markdown_text)
             new_parser.add_html_to_document(html_content, document)

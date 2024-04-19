@@ -12,7 +12,7 @@ from pypandoc import convert_text
 # 4 BusinessStats
 # 5 Ethics
 # 6 Legal
-subject_number = 1
+subject_number = 3
 your_name="Charan"
 your_regno="100"
 
@@ -43,7 +43,7 @@ for subject_index, subject_name in enumerate(df.columns):
             question_prompt = str(question_prompt)
         
         response = ollama.generate(
-            model="wizardlm2", # make sure models are installed and ollama is serving!
+            model="wizardlm2", # make sure model is installed and ollama is serving!
             prompt= f"{question_prompt+input_size}"
         )
 
